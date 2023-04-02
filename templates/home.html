@@ -21,8 +21,12 @@
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non maximus lacus, aliquet volutpat magna. Phasellus vehicula tempus ligula. Quisque tincidunt mi eros, sit amet porta turpis ultrices quis. Duis semper leo ut ipsum lacinia, elementum condimentum velit condimentum. Nam eleifend est sodales, posuere neque et, blandit dolor. Donec at arcu ultrices, tempor elit et, semper turpis. Vestibulum a neque sem. Sed felis nisi, interdum nec quam ac, tincidunt iaculis massa. Pellentesque id erat sit amet urna auctor interdum. Nulla id consectetur lorem, sit amet eleifend est. Nullam efficitur sed nulla vel eleifend. Suspendisse est diam, blandit quis pharetra at, condimentum sit amet enim. Integer vitae mollis ex, ac hendrerit magna. Ut nunc nulla, tempor quis diam eu, semper dapibus nisi. Nam et bibendum justo.
       </p>
-      <h2 class="text-center">Open Positions</h2>
-      <p class="mt-2 mb-4">TODO - Show the jobs here</p>
+      <h2 class="text-center mt-2 mb-4">Open Positions</h2>
+      <div>
+        {% for job in jobs %}
+          {% include 'jobitem.html' %}
+        {% endfor %}
+      </div>
       <div class="text-center">
             <button class="btn btn-primary btn-lg mt-4">Contact Us</button> 
       <p>Copyright 2022, Jovian</p>
